@@ -1,0 +1,52 @@
+body
+ {
+    background-image: url('./MobyTP.jpg');
+    height: 80vh;  
+    padding: 3% 0 3% 0;
+    width: 90%;
+    height: 90%;
+    background-repeat: no-repeat;
+    left: 0;
+    top: 0;
+    animation: moverFondo 10s linear infinite, ondas 3s ease-in-out infinite alternate;
+}
+@keyframes moverFondo {
+    
+    10% {
+        background-position: 0 0; /* Posición inicial */
+    }
+    100% {
+        background-position: 100% 0; /* Posición final */
+    }
+}
+
+@keyframes ondas {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+  span {
+    font-size: 16px; 
+    font-weight: bold; 
+    color: #ffffff; 
+}
+
+nav {
+    width: 100%; /* Asegura que ocupe todo el ancho disponible */
+    text-align: center; /* Centra los elementos hijos horizontalmente */
+}
+nav {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
